@@ -7,9 +7,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
-
 import static co.com.choucair.certification.pruebatecnica.util.EmailGeneratorUtil.getNewEmail;
-import static co.com.choucair.certification.pruebatecnica.util.EmailGeneratorUtil.getRandomString;
 
 
 public class FillPersonalData implements Task {
@@ -22,7 +20,7 @@ public class FillPersonalData implements Task {
         actor.attemptsTo(
                 Enter.theValue("DefaultName").into(SignUpPagePersonal.INPUT_FIRST_NAME),
                 Enter.theValue("DefaultName").into(SignUpPagePersonal.INPUT_LAST_NAME),
-                Enter.theValue(getNewEmail("@gmail.com")).into(SignUpPagePersonal.INPUT_EMAIL),
+                Enter.theValue(getNewEmail("@hotmail.com")).into(SignUpPagePersonal.INPUT_EMAIL),
                 SelectFromOptions.byValue("number:3").from(SignUpPagePersonal.DROPDOWN_MONTH),
                 SelectFromOptions.byValue("number:5").from(SignUpPagePersonal.DROPDOWN_DAY),
                 SelectFromOptions.byValue("number:1910").from(SignUpPagePersonal.DROPDOWN_YEAR),

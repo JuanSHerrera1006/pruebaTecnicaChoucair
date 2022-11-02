@@ -7,7 +7,6 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.CheckCheckbox;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-
 import static co.com.choucair.certification.pruebatecnica.util.EmailGeneratorUtil.getRandomString;
 
 public class FillFinalData implements Task {

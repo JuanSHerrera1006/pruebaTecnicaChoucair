@@ -11,6 +11,6 @@ import org.junit.runner.RunWith;
         glue = "co.com.choucair.certification.pruebatecnica.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-
+// Runner
 public class RunnerTags {
 }
